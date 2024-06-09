@@ -362,6 +362,28 @@ footer p {
     animation-delay: 1.3s;
 }
 
+.skills-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between buttons */
+    justify-content: center; /* Center the buttons horizontally */
+    padding: 20px;
+}
+
+.skills-buttons button {
+    background-color: #085f29; /* Button background color */
+    color: rgb(233, 230, 230); /* Button text color */
+    border: none;
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+.skills-buttons button:hover {
+    background-color: #054b3f; /* Background color on hover */
+}
 
 
 
