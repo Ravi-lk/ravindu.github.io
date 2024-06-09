@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ravindu</title>
+
+
+    <link rel="stylesheet" href="newstyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+</head>
+
+<body>
+
+    <canvas id="matrixCanvas"></canvas>
+    <!-- Matrix -->
+    <script src="/js/matrix.js"></script>
+
+    <header class="header">
+        <a href="#" class="logo">Ravindu Lakmina </a>
+
+        <nav class="navbar">
+            <a href="#home" style="--i:1;" class="active">Home</a>
+            <!-- <a href="#about" style="--i:2;">About</a> -->
+            <a href="#skill" style="--i:3;">Skills</a>
+            <a href="#certs" style="--i:4;">Certifications</a>
+            <a href="#contact" style="--i:5;">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+
+        <div class="home-content" data-scroll data-scroll-speed="-5">
+            <h3 class="mu">Hello, It's me</h3>
+            <h1>Ravindu Lakmina</h1>
+            <h3>And I'm a <span class="pro-text">
+                    <script>
+                        var typed = new Typed(".pro-text", {
+                            strings: [
+                                "Hacker",
+                                "Cybersecurity Engineer",
+                                "Penetration Tester"
+                            ],
+                            typeSpeed: 100,
+                            backSpeed: 100,
+                            backDelay: 1000,
+                            loop: true
+                        });
+                    </script>
+                </span></h3>
+
+            <p> &emsp; &emsp;Seasoned cybersecurity professional with a passion for safeguarding data and systems. Blend
+                of technical
+                proficiency and proactive mindset allows me to excel in addressing complex challenges. Commitment to
+                continuous learning yields innovative security solutions. Expertise in penetration testing, threat
+                intelligence analysis, and cloud security and Ethical Hacking.<br> <br>
+                &emsp; &emsp;
+            </p>
+
+            <div class="home-sci">
+                <a href="https://github.com/Ravi-lk" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/ravindulakmina" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <!-- <a href="https://wa.me/dsdas" target="_blank"><i class='bx bxl-whatsapp'></i></a> -->
+                <!-- <a href="https://www.instagram.com/ravindu/" target="_blank"><i class='bx bxl-instagram'></i></a> -->
+            </div>
+            <a href="" class="btn-box" download="ravindu CV/Resume">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <div class="glowing-circle">
+                <span></span>
+                <span></span>
+                <div class="image">
+                    <img src="assets/img/me.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="skill" class="skill">
+        <h2>Skills</h2>
+        <ul>
+            <li>Network Security</li>
+            <li>Penetration Testing</li>
+            <li>Incident Response</li>
+            <li>Cloud Security</li>
+            <li>OSINT</li>
+            <li>Linux</li>
+            <li>Threat Hunting</li>
+            <li>Social Engineering</li>
+            <li>Security Audits</li>
+            <li>Malware Analysis</li>
+         
+        </ul>
+    </section>
+    <section id="certs" class="Certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Certified Ethical Hacker v12 | CEH</li>
+            <li>Certified in Cybersecurity - ISC2</li>
+            <li>Cybereason Certified Threat Hunter</li>
+            <li>Cyber Incident Response Specialization</li>
+            <li>Google IT support Professional Certificate</li>
+            <li>Ransomeware Uncovered Specialist Certificate - ICTTF</li>
+            <li>ICSI | CNSS Certified Network Security Specialist</li>
+
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+
+        <p>Email: <a href="mailto:ravindu@example.com">ravindu.lakmina1@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ravindulakmina/"
+                target="_blank">https://www.linkedin.com/in/ravindulakmina/</a></p>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ravindu Lakmina. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
