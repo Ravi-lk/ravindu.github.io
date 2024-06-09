@@ -159,7 +159,7 @@ h3 {
     background: green;
     border-radius: 40px;
     font-size: 16px;
-    color: black;
+    color: rgb(236, 236, 236);
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
@@ -261,53 +261,129 @@ canvas {
 }
 
 .skill {
-    /* width: 100%;
-    height: 100vh; */
-    /* display: flex; */
-    justify-content: space-between;
-    align-items: center;
-    padding: 70px 10% 0;
-}
-
-.skill ul {
-    /* width: 100%;
-    height: 100vh; */
-    /* display: flex; */
-    justify-content: space-between;
-    align-items: center;
-    padding: 70px 10% 0;
-    list-style-type: square;
-
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+    color: #b1b1b1;
+    /* Green color */
+    text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.1);
 }
 
 
-.Certifications {
-    /* width: 100%;
-    height: 100vh; */
-    /* display: flex; */
-    justify-content: space-between;
-    align-items: center;
-    padding: 70px 10% 0;
+/* Certifications Section */
+.certifications {
+    padding: 70px 10%;
+    background: black;
+    /* Dark background */
+    color: #fff;
+    /* Light text for readability */
 }
 
-.Certifications ul {
-    /* width: 100%;
-    height: 100vh; */
-    /* display: flex; */
-    justify-content: space-between;
-    align-items: center;
-    padding: 70px 10% 0;
-    list-style-type: square;
-
+.certifications h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #b1b1b1;
+    /* Green color */
+    text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.1);
 }
 
+.certs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.cert-card {
+    background: #333;
+    /* Dark gray background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ffffff;
+    /* Green text */
+}
+
+.cert-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 255, 0, 0.3);
+    /* Green shadow */
+}
+
+.cert-card::before {
+    content: "📜";
+    /* Icon before each certification */
+    display: block;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #e9e9e9;
+    /* Green icon */
+}
+
+/* Contact Section */
 .contact {
-    /* width: 100%;
-    height: 100vh; */
-    /* display: flex; */
-    justify-content: space-between;
+    padding: 70px 10%;
+    background: black; /* Dark background */
+    color: #fff; /* Light text for readability */
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #b1b1b1; /* Contact Header color */
+    text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.1);
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 70px 10% 0;
+    gap: 20px;
+}
+
+.contact-item {
+    background: #333; /* Dark gray background */
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 255, 0, 0.3); /* Green shadow */
+}
+
+.contact-item i {
+    font-size: 24px;
+    color: #ececec; /* Green color */
+    flex-shrink: 0; /* Prevents icon from shrinking */
+}
+
+.contact-item p {
+    margin: 0;
+    color: #fff;
+    flex: 1; /* Allows text to take available space */
+    text-align: left; /* Align text to the left */
+}
+
+.contact-item a {
+    color: #a5a5a5; /* Green color */
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
 }
 
 a:link {
@@ -365,24 +441,32 @@ footer p {
 .skills-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Space between buttons */
-    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px;
+    /* Space between buttons */
+    justify-content: center;
+    /* Center the buttons horizontally */
     padding: 20px;
 }
 
 .skills-buttons button {
-    background-color: #085f29; /* Button background color */
-    color: rgb(233, 230, 230); /* Button text color */
+    background-color: #085f29;
+    /* Button background color */
+    color: rgb(233, 230, 230);
+    /* Button text color */
     border: none;
-    padding: 10px 20px; /* Button padding */
-    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px;
+    /* Button padding */
+    border-radius: 5px;
+    /* Rounded corners */
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease; /* Smooth background color change */
+    transition: background-color 0.3s ease;
+    /* Smooth background color change */
 }
 
 .skills-buttons button:hover {
-    background-color: #054b3f; /* Background color on hover */
+    background-color: #054b3f;
+    /* Background color on hover */
 }
 
 
